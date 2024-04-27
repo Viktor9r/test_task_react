@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    padding: 0 12px !important;
+}
+
+
+
+@media (min-width: 1100px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        width: 93%;
+        max-width: 1320px !important;
+        position: relative;
+    }
+}
+
+.dropdown-outer-container {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
+.dropdown-inner-container {
+    width: 100%;
+
+    @media (min-width: 1100px) {
+        width: 230px;
+    }
+}
+
+.dropdown-label {
+    color: #15202b;
+    font-size: 12px;
+    margin-bottom: 4px;
+    display: none;
+
+    @media (min-width: 1100px) {
+        display: block;
+    }
+}
+
+.dropdown-toggle {
+    height: 34px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #15202b;
+    background: transparent;
+    border: 1px solid #fd5000;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+
+    svg {
+        fill: #15202b;
+        width: 15px;
+
+        @media (min-width: 1100px) {
+            display: none;
+        }
+    }
+
+    &::after {
+        display: none !important;
+
+        @media (min-width: 1100px) {
+            display: inline-block !important;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        width: 230px;
+        border-color: #b6b7bb;
+        height: 38px;
+    }
+}
+
+.dropdown-menu {
+    width: 100%;
+    margin-top: 12px !important;
+    padding: 12px !important;
+    border: none !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+
+    a {
+        font-size: 14px;
+        padding: 10px 0 !important;
+        border-bottom: 1px solid #f6f6f6 !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        svg {
+            display: none;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .selected {
+        font-weight: 600;
+
+        svg {
+            display: block;
+        }
+    }
+}
+
+.sportsbook-list {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1100px) and (min-width: 680px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 16px
+    }
+}

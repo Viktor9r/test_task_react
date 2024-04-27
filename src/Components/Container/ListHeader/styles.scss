@@ -1,0 +1,53 @@
+.list-header {
+    background-color: #253340;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 4px 4px 0 0;
+    padding: 16px 24px;
+    gap: 20px;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+
+    @media (min-width: 1100px) {
+        display: flex;
+    }
+}
+
+.sportsbook {
+    margin: 0;
+    flex: 0.13;
+    min-width: 160px
+}
+
+.bonus {
+    margin: 0;
+    flex: 0.25
+}
+
+.rating {
+    margin: 0;
+    flex: 0.11;
+    min-width: 130px;
+    max-width: 130px;
+}
+
+.payout {
+    margin: 0;
+    flex: 0.08;
+    width: 100px;
+}
+
+.benefits {
+    margin: 0;
+    flex: 0.26
+}
+
+.bet-button {
+    margin: 0;
+    flex: 0.17;
+    min-width: 200px;
+}
